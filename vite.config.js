@@ -12,17 +12,9 @@ export default defineConfig({
   ],
   build: {
     outDir: 'build',
-    target: 'esnext', // modern browsers = smaller bundle
+    target: 'esnext',
     cssCodeSplit: true,
-    minify: 'esbuild', // fastest + smallest
-    sourcemap: false,  // disable in production
-
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-        },
-      },
-    },
-  },
+    minify: 'esbuild',
+    sourcemap: false
+  }
 })
