@@ -10,4 +10,19 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     svgr()
   ],
+  build: {
+    outDir: 'build',
+    target: 'esnext', // modern browsers = smaller bundle
+    cssCodeSplit: true,
+    minify: 'esbuild', // fastest + smallest
+    sourcemap: false,  // disable in production
+
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+        },
+      },
+    },
+  },
 })
