@@ -1,5 +1,4 @@
 import { socialMedia, year } from "../data/data";
-import { Link } from "react-router";
 
 const Footer = () => (
   <footer className="border-t border-border py-10">

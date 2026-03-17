@@ -239,7 +239,7 @@ export const projects = [
      "Real-time skill discovery & matching",
      "Bookmarking & category filtering",
     ],
-    tech: ["React", "Redux Toolkit", "Supabase", "PostgreSQL", "Lovable", "Cursor"],
+    tech: ["Lovable", "Cursor", "React", "Redux Toolkit", "Supabase", "PostgreSQL"],
     image: skillswapImg,
     links: { github: "https://github.com/NiyatiMPatel/SkillSwap", live: "https://skillshar.netlify.app/" },
     featured: true,
@@ -253,7 +253,7 @@ export const projects = [
     title: "SoundDZign",
     subtitle: "Performance-Optimized Homepage",
     description:
-     "A blazing-fast React 19 homepage leveraging lazy loading, Suspense boundaries, and SCSS modules to achieve near-perfect Lighthouse scores.",
+     "A React 19 homepage leveraging lazy loading, Suspense boundaries, and SCSS modules to achieve near-perfect Lighthouse scores.",
     badge: "Performance Optimization",
     badgeIcon: Zap,
     highlights: [
@@ -292,7 +292,7 @@ export const projects = [
      "Add, delete & filter expenses",
      "Responsive mobile-first layout",
     ],
-    tech: ["React", "CSS Modules", "Chart.js"],
+    tech: ["React", "CSS Modules", "Javascript"],
     image: expenseImg,
     links: { github: "https://github.com/NiyatiMPatel/expense-tracker-app", live: "https://niyatimpatel.github.io/react-expense-tracker/" },
    },
