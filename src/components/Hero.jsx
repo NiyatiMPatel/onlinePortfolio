@@ -1,9 +1,9 @@
 import { ArrowDown, Mail, Download, FolderOpen } from "lucide-react";
 // import { motion } from "motion/react";
 import * as motion from "motion/react-client";
-import profile320 from "../assets/profile-320.webp";
-import profile480 from "../assets/profile-480.webp";
-import profile640 from "../assets/profile-640.webp";
+import profile320 from "../../public/assets/profile-320.webp";
+import profile480 from "../../public/assets/profile-480.webp";
+import profile640 from "../../public/assets/profile-640.webp";
 import Resume from "../assets/Frontend-Developer-Niyati-Patel.pdf";
 import { socialMedia } from "../data/data";
 
