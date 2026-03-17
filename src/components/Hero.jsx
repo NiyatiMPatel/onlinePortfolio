@@ -95,7 +95,7 @@ const Hero = () => {
             >
               Passionate about transforming product ideas and design systems
               into scalable frontend architectures. Exploring AI-assisted
-              development workflows using Claude, Windsurf, Cursor, and Lovable.
+              development workflows using Claude, Lovable, Cursor, and Windsurf.
             </motion.p>
 
             {/* CTAs */}

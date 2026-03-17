@@ -209,7 +209,7 @@ export const experiences = [
   ],
  },
  {
-  role: "Project Engineering",
+  role: "Project Engineer",
   company: "Exel Galaxy Technology Services",
   period: "Nov 2017 – Apr 2020",
   color: "from-primary via-accent to-primary",
@@ -239,7 +239,7 @@ export const projects = [
      "Real-time skill discovery & matching",
      "Bookmarking & category filtering",
     ],
-    tech: ["Lovable", "Cursor", "React", "Redux Toolkit", "Supabase", "PostgreSQL"],
+    tech: ["Lovable", "Cursor", "React 19", "Redux Toolkit", "Supabase", "PostgreSQL"],
     image: skillswapImg,
     links: { github: "https://github.com/NiyatiMPatel/SkillSwap", live: "https://skillshar.netlify.app/" },
     featured: true,
@@ -303,22 +303,6 @@ export const projects = [
   label: "Foundations",
   projects: [
    {
-    title: "E-Commerce Website",
-    subtitle: "Multi-page Responsive Platform",
-    description:
-     "A fully responsive multi-page e-commerce site demonstrating modern layout techniques, product filtering, and interactive UI components.",
-    badge: "Responsive Design",
-    badgeIcon: Code2,
-    highlights: [
-     "Product catalog with filtering",
-     "Shopping cart & wishlist",
-     "Responsive Bootstrap layout",
-    ],
-    tech: ["HTML5", "CSS3", "Bootstrap"],
-    image: ecommerceImg,
-    links: { github: "https://github.com/NiyatiMPatel/assignment-2", live: "https://vendor-fashion.netlify.app/" },
-   },
-   {
     title: "JS Practice Platform",
     subtitle: "Interactive Learning Exercises",
     description:
@@ -334,6 +318,23 @@ export const projects = [
     image: jsPracticeImg,
     links: { github: "https://github.com/NiyatiMPatel/js-assignment", live: "https://javascript-super-app.netlify.app/" },
    },
+   {
+    title: "E-Commerce Website",
+    subtitle: "Multi-page Responsive Platform",
+    description:
+     "A fully responsive multi-page e-commerce site demonstrating modern layout techniques, product filtering, and interactive UI components.",
+    badge: "Responsive Design",
+    badgeIcon: Code2,
+    highlights: [
+     "Product catalog with filtering",
+     "Shopping cart & wishlist",
+     "Responsive Bootstrap layout",
+    ],
+    tech: ["HTML5", "CSS3", "Bootstrap"],
+    image: ecommerceImg,
+    links: { github: "https://github.com/NiyatiMPatel/assignment-2", live: "https://vendor-fashion.netlify.app/" },
+   },
+
   ],
  },
 ];
