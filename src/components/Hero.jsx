@@ -1,6 +1,7 @@
 import { ArrowDown, Mail, Download, FolderOpen } from "lucide-react";
-import { motion } from "motion/react";
-import profileImg from "../assets/profile-niyati.png";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
+import profileImg from "../assets/profile-niyati.webp";
 import Resume from "../assets/Frontend-Developer-Niyati-Patel.pdf";
 import { socialMedia } from "../data/data";
 
@@ -175,9 +176,11 @@ const Hero = () => {
               <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary via-accent to-primary opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-500" />
               <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-accent opacity-30 group-hover:opacity-50 transition-opacity" />
               <img
-                loading="eager"
                 src={profileImg}
                 alt="Niyati Patel - Frontend Developer"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
                 className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-2 border-border/50"
               />
               {/* Orbiting dot */}

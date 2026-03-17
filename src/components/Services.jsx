@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import SectionHeading from "./SectionHeading";
 import { ArrowRight } from "lucide-react";
 import { services } from "../data/data";

@@ -1,8 +1,9 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import { Send } from "lucide-react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const contactValidationSchema = Yup.object({
   name: Yup.string()
@@ -30,6 +31,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 const ContactForm = ({ onSuccess, onError }) => {
   const submitHandler = async (values, { resetForm, setSubmitting }) => {
+    const emailjs = (await import("@emailjs/browser")).default;
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, values, PUBLIC_KEY);
       setSubmitting(false);

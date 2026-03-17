@@ -2,19 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* For the main page, apply to the <html> or <body> element */
-html {
+/* For the main page, apply to the <html> or <body> element Hide scrollbar for Chrome, Safari, Opera, and new Edge */
 
-  /* Hide scrollbar for Chrome, Safari, Opera, and new Edge */
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Hide scrollbar for IE, legacy Edge, and Firefox */
-  -ms-overflow-style: none;
-  /* IE and Edge */
+html::-webkit-scrollbar {
+  display: none;
   scrollbar-width: none;
-  /* Firefox, modern browsers */
 }
 
 

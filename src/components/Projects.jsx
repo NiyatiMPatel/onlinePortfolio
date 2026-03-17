@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import SectionHeading from "./SectionHeading";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { projects } from "../data/data";
@@ -26,6 +27,7 @@ const ProjectCard = ({ project, index, isFeatured }) => (
         alt={`${project.title} preview`}
         className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
         loading="lazy"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
 

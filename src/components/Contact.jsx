@@ -1,6 +1,8 @@
-import { useState } from "react";
-import ContactForm from "./ContactForm";
-import { motion } from "motion/react";
+import { useState, Suspense, lazy } from "react";
+const ContactForm = lazy(() => import("./ContactForm"));
+// import ContactForm from "./ContactForm";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import { socialMedia } from "../data/data";
 import SectionHeading from "./SectionHeading";
 import Modal from "./Modal";
@@ -35,7 +37,10 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {/* Form */}
-            <ContactForm onSuccess={onSuccess} onError={onError} />
+            <Suspense fallback={null}>
+              <ContactForm onSuccess={onSuccess} onError={onError} />
+            </Suspense>
+            {/* <ContactForm onSuccess={onSuccess} onError={onError} /> */}
             {/* Contact info */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}

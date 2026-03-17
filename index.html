@@ -11,9 +11,14 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+    as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap">
+</noscript>
 
   <title>Niyati Patel — Frontend Developer</title>
   <meta name="author" content="Niyati Patel" />
@@ -24,9 +29,7 @@
     content="Frontend Developer | React Ecosystem Specialist (Redux, Query) | Building Scalable, High-Performance Web Applications | Javascript ES6+ | AWS Certified Developer Associate" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://niyatipatel.netlify.app/" />
-  <meta property="og:image" content="./src/assets/profile-niyati.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="/og-image.png" />
   <meta property="og:image:alt" content="Niyati Patel — Frontend Developer" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Niyati Patel" />
@@ -48,7 +51,7 @@
         "https://www.linkedin.com/in/niyati-mukesh-patel", 
         "https://github.com/NiyatiMPatel"
       ],
-      "jobTitle": "Frontend Developer",
+      "jobTitle": "Frontend Developer"
     }
     </script>
 </body>

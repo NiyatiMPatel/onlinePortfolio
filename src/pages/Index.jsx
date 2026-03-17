@@ -1,24 +1,30 @@
+import { Suspense, lazy } from "react";
+import { LazyMotion, domAnimation } from "motion/react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
-import Services from "../components/Services";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+const About = lazy(() => import("../components/About"));
+const Skills = lazy(() => import("../components/Skills"));
+const Experience = lazy(() => import("../components/Experience"));
+const Projects = lazy(() => import("../components/Projects"));
+const Services = lazy(() => import("../components/Services"));
+const Contact = lazy(() => import("../components/Contact"));
+const Footer = lazy(() => import("../components/Footer"));
 
 const Index = () => (
   <div className="min-h-screen bg-background">
-    <Navbar />
-    <Hero />
-    <About />
-    <Skills />
-    <Experience />
-    <Projects />
-    <Services />
-    <Contact />
-    <Footer />
+    <LazyMotion features={domAnimation}>
+      <Navbar />
+      <Hero />
+      <Suspense fallback={null}>
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Services />
+        <Contact />
+        <Footer />
+      </Suspense>
+    </LazyMotion>
   </div>
 );
 

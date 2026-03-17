@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import SectionHeading from "./SectionHeading";
 import { categories } from "../data/data";
 

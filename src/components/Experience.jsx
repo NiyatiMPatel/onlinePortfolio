@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import { Building2, Calendar, ChevronRight, Zap } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import { experiences } from "../data/data";

@@ -1,5 +1,6 @@
 import { GraduationCap, Briefcase, Sparkles, ArrowRight } from "lucide-react";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
 import { focusAreas, education } from "../data/data";
 import SectionHeading from "./SectionHeading";
 

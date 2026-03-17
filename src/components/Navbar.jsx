@@ -1,16 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
-];
+import { AnimatePresence } from "motion/react";
+// import { motion } from "motion/react";
+import * as motion from "motion/react-client";
+import { navLinks } from "../data/data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

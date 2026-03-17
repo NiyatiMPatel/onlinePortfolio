@@ -19,12 +19,12 @@ import {
  LayoutDashboard
 } from "lucide-react";
 
-import skillswapImg from "../assets/projects/skillSwap.png";
-import sounddzignImg from "../assets/projects/soundZ.png";
-import expenseImg from "../assets/projects/expense.png";
-import foodOrderImg from "../assets/projects/meals.png";
-import ecommerceImg from "../assets/projects/fashion.png";
-import jsPracticeImg from "../assets/projects/superapp.png";
+import skillswapImg from "../assets/projects/skillSwap.webp";
+import sounddzignImg from "../assets/projects/soundZ.webp";
+import expenseImg from "../assets/projects/expense.webp";
+import foodOrderImg from "../assets/projects/meals.webp";
+import ecommerceImg from "../assets/projects/fashion.webp";
+import jsPracticeImg from "../assets/projects/superapp.webp";
 
 // PERSONAL CONTACT DETAILS
 export const linkedin = "https://www.linkedin.com/in/niyati-mukesh-patel"
@@ -38,6 +38,17 @@ export const socialMedia = [
  { icon: Linkedin, href: linkedin, label: "LinkedIn" },
  { icon: Mail, href: `mailto:${mail}`, label: "Email" },
 ]
+
+// NAVBAR LINKS
+export const navLinks = [
+ { label: "Home", href: "#home" },
+ { label: "About", href: "#about" },
+ { label: "Skills", href: "#skills" },
+ { label: "Experience", href: "#experience" },
+ { label: "Projects", href: "#projects" },
+ { label: "Services", href: "#services" },
+ { label: "Contact", href: "#contact" },
+];
 
 // ABOUT SECTION
 
